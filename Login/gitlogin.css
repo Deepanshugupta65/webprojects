@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+/* it will divide into to equal columns */
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap :7rem;
+    padding: 7px;
+    
+}
+/* centrlized the collection img */
+.collectionimg{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+.collectionimg img{
+    width: 536px;
+    height: 480px;
+}
+
+.login-content{
+    display: grid;
+    justify-content: start;
+    align-content: center;             /* all content is in cenetr*/
+    text-align: center;
+    
+}
+.login-content img{
+    height: 143px;
+    position: relative;
+    top: 3px;
+  
+}
+ h5.hii{
+    font-size: 2.5rem;
+
+}
+form {
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 14px;
+    height: 458px;
+    padding: 8px;
+}
+.input-div{
+    display: grid;
+    grid-template-columns: 15% 93%;
+    padding: 5px;
+}
+.User{
+    text-decoration: none;
+    height: 32px;
+    width: 231px;
+}
+/*  changes in border of username and passsword */
+.input-div > div > input{
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div .i{
+    padding-left: 0px;
+    margin: 8px;
+  
+}
+a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.8rem;
+	transition: .3s;
+}
+.btn{
+        display: block;
+        width: 100%;
+        height: 50px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        background-color: #6c63FF;
+        background-size: 200%;
+        font-size: 1.2rem;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        margin: 1rem 0;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .btn:hover{
+        background-position: right;
+    }
+    @media  screen and ( max-width: 1050px){
+        .container{
+            grid-gap: 5rem;
+        }
+     }
+     @media screen and (max-width:1000px){
+        form{
+            width: 290px;
+        }
+        form h2{
+            font-size: 2.4rem;
+            margin: 8px 0;
+        }
+        .collectionimg img{
+            width: 536px;
+        }
+    }   
+    @media screen and (max-width:900px){
+        /*  collection image none */
+        .collectionimg{      
+            display: none;
+        }
+        .container{
+            grid-template-columns: 1fr;
+        }
+        .login-content{
+            justify-content: center;
+        }
+    }
+   
