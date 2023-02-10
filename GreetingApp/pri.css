@@ -1,0 +1,16 @@
+*{padding: 0;
+    margin: 0;
+    box-sizing: border-box;}
+    
+body{
+
+    background-image: linear-gradient(to right, #23074d, #cc5333 );
+  }
+  
+  div .box1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15rem;
+    
+  }
